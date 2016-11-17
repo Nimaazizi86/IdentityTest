@@ -1,0 +1,42 @@
+﻿@model SchoolWebEFNimaV2.Models.Assignment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Assignment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignmentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignmentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UploadDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UploadDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeadlineDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeadlineDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AssignmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
